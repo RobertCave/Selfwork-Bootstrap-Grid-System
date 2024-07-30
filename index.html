@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog con Bootstrap</title>
+    
+
+    <!-- Import del css di Bootstrap -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+     <!-- Import di un css personale -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--  Selfwork Bootstrap Grid System
+    Realizza un blog su qualsiasi argomento sfruttando il Bootstrap e CSS. Il blog deve contenere i seguenti elementi:
+    
+    Navbar fissata in alto.
+    Un header grande quanto tutta la pagina con il titolo al centro (cosiddetta Hero section).
+    Sotto l’header, una sezione dedicata alle ricette sul sito
+    3 ricette della tua regione
+    Immagine, titolo, piccola descrizione
+    L’immagine della ricetta deve portare su GialloZafferano alla ricetta in questione.
+    Per quanto possibile, il sito dev’essere responsive, sfruttando i breakpoints di Bootstrap. -->
+    
+    <!-- 
+    Piatti della Basilicata selezionati e testati personalmente:
+    https://ricette.giallozafferano.it/Ciambotta.html 
+    https://ricette.giallozafferano.it/Patate-e-peperoni-cruschi.html
+    https://ricette.giallozafferano.it/Lagane-e-ceci.html
+    
+    -->
+    
+    <section class="main">
+        <!-- Cercando sul sito di bootstrap per le classi da usare, 
+        ne ho trovato alcune create per la navbar. 
+        Proprio quelle che servivano per questo esercizio :-) -->
+        <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid"> 
+                <a class="navbar-brand" href="#"><strong>Basilicata in tavola</strong> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Ricette della Basilicata</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Segnala una ricetta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Social Networks</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- intestazione a tutta pagina, 
+          -->
+        
+        <div class="p-5 text-center bg-image">
+
+                <div class="text-white">
+                    <h1>Le ricette più amate della Basilicata</h1>
+                    <h4 class="mb-3">I piatti più ricercati e buoni della Lucania</h4>
+                </div>
+       
+    </div>
+
+
+
+<!-- Le tre ricette lucane -->
+<div class="container-fluid">
+    <h2 class="mt-10">Le ricette top della Basilicata</h2>
+    
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+            <div class="card h-100">
+                <a href="https://ricette.giallozafferano.it/Ciambotta.html" target="_blank"><img src="https://www.giallozafferano.it/images/194-19447/Ciambotta_780x520_wm.jpg" class="card-img-top" alt="La ciambotta"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Ciambotta</h5>
+                    <p class="card-text">La Ciambotta della Basilicata con Melanzane, patate, peperoni, zucchine, pomodori e cipolle. Si tratta di un gustoso e ricco contorno stufato lentamente che si prepara in Campania, ma anche in Calabria e Basilicata, con differenze da regione a regione ma anche da famiglia a famiglia. </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <a href="https://ricette.giallozafferano.it/Patate-e-peperoni-cruschi.html" target="_blank"><img src="https://www.giallozafferano.it/images/27-2781/Patate-e-peperoni-cruschi_780x520_wm.jpg" class="card-img-top" alt="Patate e Peperoni cruschi"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Patate e Peperoni cruschi</h5>
+                    <p class="card-text"> Le patate e peperoni cruschi sono uno dei piatti più rappresentativi della Basilicata.
+                        Per preparare questo gustoso contorno si utilizzano i peperoni cruschi: peperoni rossi dolci essiccati, che significa croccanti in dialetto lucano.  </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <a href="https://ricette.giallozafferano.it/Lagane-e-ceci.html" target="_blank"><img src="https://www.giallozafferano.it/images/151-15172/Lagane-e-ceci_780x520_wm.jpg" class="card-img-top" alt="lagane e ceci"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Lagane e ceci</h5>
+                    <p class="card-text"> Le lagane ricordano delle grandi tagliatelle, ma sono realizzate in un formato più largo, circa 2-3 cm. Unite ai ceci, fatti bollire lentamente e poi insaporiti con la passata di pomodoro, diventano un piatto cremoso e profumato, magari da servire come comfort food in una fredda serata invernale!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</section> 
+<!--  Chiusura Main -->
+
+
+
+<!-- Foooter -->
+<div class="container-fluid"> 
+    <footer class="row align-items-center bg-primary text-white small">
+        <div class="col-12 text-center">Scopri la Basilicata cucinando le nostre ricette tradizionali - Copyright 2024 - Esercizio Aulab </div>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
